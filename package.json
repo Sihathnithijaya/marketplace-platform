@@ -1,0 +1,16 @@
+{
+  "name": "marketplace-platform",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev:web": "pnpm --filter web dev",
+    "dev:api": "pnpm --filter api start:dev",
+    "dev": "pnpm run \"/dev:.*/\"",
+    "build": "pnpm -r build",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
