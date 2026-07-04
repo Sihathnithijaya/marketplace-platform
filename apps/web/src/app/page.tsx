@@ -25,7 +25,7 @@ export default function HomePage() {
 
       {health && (
         <p className="text-green-600">
-              Welcome! Connected to API — status: {health.status} (checked at{" "}
+              ! Welcome! Connected to API — status: {health.status} (checked at{" "}
           {new Date(health.timestamp).toLocaleTimeString()})
         </p>
       )}
